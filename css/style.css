@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: larger;
+}
+
+h2{
+    font-size: large;
+}
+
+h3{
+    font-size: medium;
+}
+
+body {
+    font-family: "Raleway", "Lato", sans-serif;
+    height: 100%;
+}
+header {
+    height: 15%;
+}
+
+header ul{
+    list-style-type: none ;
+    
+}
+header li{
+    display: inline;
+    
+}
+
+header li :hover{
+    
+    background-color: white;
+}
+
+.logo{
+    display: inline;
+    width: 30%;
+}
+
+.menu{
+    background-color: darkgray;
+}
+
+main {
+    height: 70%;
+}
+
+.indexFirstSection{
+    background-color: beige;
+}
+.indexSecondSection{
+    background-color: gainsboro;
+}
+.introTextIndex{
+    display: inline;
+    width: 50%;
+}
+
+.introTextIndex{
+    display: inline;
+    width: 50%;
+}
+
+footer {
+    height: 15%;
+}
+
