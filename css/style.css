@@ -1,151 +1,141 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
 }
 
-h1{
-    font-size: larger;
+h1 {
+  font-size: larger;
 }
 
-h2{
-    font-size: large;
+h2 {
+  font-size: large;
 }
 
-h3{
-    font-size: medium;
-   padding-bottom: 5px;
+h3 {
+  font-size: medium;
+  padding-bottom: 5px;
 }
 
 body {
-    font-family: "Raleway", "Lato", sans-serif;
-    background-color: blueviolet;
+  font-family: "Raleway", "Lato", sans-serif;
+  background-color: blueviolet;
 }
-.grid{
-    display: grid;
-    grid-template-areas: 
+.grid {
+  display: grid;
+  grid-template-areas:
     "header header nav"
     "main main main"
     "footer footer footer";
-    min-height: 100%;
-    grid-template-columns: 1fr 0.5fr 1fr;
-    grid-template-rows: 40px 75vh 120px;
+  min-height: 100%;
+  grid-template-columns: 1fr 0.5fr 1fr;
+  grid-template-rows: 40px 75vh 120px;
 }
 nav {
-    grid-area: nav;
-    height: 0.5fr;
-
+  grid-area: nav;
+  height: 0.5fr;
 }
 
-nav ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    height: 100%;
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
 }
-
 
 header {
-    grid-area: header;
-
+  grid-area: header;
 }
 
-header ul{
-    list-style-type: none ;
-    
+header ul {
+  list-style-type: none;
 }
-header li{
-    display: inline;
-    
+header li {
+  display: inline;
 }
 
-header li :hover{
-    
-    background-color: white;
+header li :hover {
+  background-color: white;
 }
 
-.logo{
-    display: inline;
-    height: 100%;
+.logo {
+  display: inline;
+  height: 100%;
 }
 
-.menu{
-    background-color: darkgray;
+.menu {
+  background-color: darkgray;
 }
 
 main {
-    background-color: aquamarine;
-    grid-area: main;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-   height: 89vh;
-  
+  background-color: aquamarine;
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 89vh;
 }
 
-.FirstSection{
-    background-color: beige;
-    display: flex;
-    height: 100%;
-    flex-direction: row;
+.FirstSection {
+  background-color: beige;
+  display: flex;
+  height: 100%;
+  flex-direction: row;
 }
 
-.SectionTextLeft{
-    margin-left: 5%;
-    margin-right: 3%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.SectionTextLeft {
+  margin-left: 5%;
+  margin-right: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.mainImageRight{
-    margin-right: 5% ;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.SecondSection{
-    background-color: rgb(22, 53, 130);
-    height: 100%;
-    display: flex;
-    flex-direction: row-reverse;
-    padding-bottom: 10px;
-}
-.SectionTextRigh{
-    margin-left: 3%;
-    margin-right: 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.mainImageRight {
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-.mainImageLeft{
-    margin-left: 5% ;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+.SecondSection {
+  background-color: rgb(22, 53, 130);
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  padding-bottom: 10px;
+}
+.SectionTextRigh {
+  margin-left: 3%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
+.mainImageLeft {
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 
 footer {
-    padding-top: 10px;
-     padding-bottom: 10px;
-    background-color: green;
-    position:absolute;
-    bottom: 0%;
-    grid-area: footer;
-    width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: green;
+  position: absolute;
+  bottom: 0%;
+  grid-area: footer;
+  width: 100%;
 }
 
-footer .footerItem{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 30%;
-    align-items: center;
-    float: left;
-   
-   }
-
+footer .footerItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 30%;
+  align-items: center;
+  float: left;
+}
