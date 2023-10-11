@@ -50,12 +50,12 @@ header nav ul {
   align-items: center;
   height: 100%;
 }
-header nav ul:hover {
-  background-color: white;
-}
 header li {
   display: inline;
   list-style: none;
+}
+header li:hover {
+  background-color: white;
 }
 
 .logo {
@@ -113,7 +113,7 @@ main {
 
 .SecondSection {
   padding-top: 10px;
-  background-color: rgba(24, 58, 98, 0.8823529412);
+  background-color: #183a62;
   height: 100%;
   display: flex;
   flex-direction: row-reverse;

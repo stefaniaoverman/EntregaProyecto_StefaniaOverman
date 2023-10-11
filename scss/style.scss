@@ -1,3 +1,6 @@
+$primaryColor: #f0eff1;
+$secundaryColor: #183a62;
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +10,7 @@
 
 h1 {
   font-size: larger;
-  color: #183a62;
+  color: $secundaryColor;
 }
 
 h2 {
@@ -21,7 +24,7 @@ h3 {
 
 body {
   font-family: "Raleway", "Lato", sans-serif;
-  background-color: #f0eff1;
+  background-color: $primaryColor;
 }
 .grid {
   display: grid;
@@ -34,7 +37,6 @@ body {
   grid-template-rows: 40px 75vh auto;
 }
 
-
 header {
   grid-area: header;
   display: flex;
@@ -45,22 +47,22 @@ header {
     height: 0.5fr;
     align-items: right;
     width: 60%;
-  
+
     ul {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
       align-items: center;
       height: 100%;
-      &:hover {
-        background-color: white;
-      }
     }
   }
 
   li {
     display: inline;
     list-style: none;
+    &:hover {
+      background-color: white;
+    }
   }
 }
 
@@ -73,20 +75,20 @@ header {
   background-color: darkgray;
   ul {
     list-style-type: none;
-    background-color: #183a62;
+    background-color: $secundaryColor;
   }
 
   a {
-    color: #f0eff1;
+    color: $primaryColor;
 
     &:hover {
-      color: #183a62;
+      color: $secundaryColor;
     }
   }
 }
 
 main {
-  border-top: 1px #183a62;
+  border-top: 1px $secundaryColor;
   grid-area: main;
   display: flex;
   flex-direction: column;
@@ -95,7 +97,7 @@ main {
 }
 
 .FirstSection {
-  border-top: 1px solid #183a62;
+  border-top: 1px solid $secundaryColor;
   background-color: beige;
   padding-top: 10px;
   display: flex;
@@ -123,7 +125,7 @@ main {
 
 .SecondSection {
   padding-top: 10px;
-  background-color: #183a62e1;
+  background-color: $secundaryColor;
   height: 100%;
   display: flex;
   flex-direction: row-reverse;
@@ -154,10 +156,10 @@ main {
 }
 
 footer {
-  border-top: 1px #183a62;
+  border-top: 1px $secundaryColor;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #f0eff1;
+  background-color: $primaryColor;
   position: absolute;
   bottom: 0%;
   grid-area: footer;
@@ -173,7 +175,7 @@ footer {
   }
 
   h3 {
-    color: #183a62;
+    color: $secundaryColor;
   }
   a {
     color: #4d2db7;
@@ -253,7 +255,7 @@ footer {
     padding-bottom: 5%;
   }
   footer {
-    border-top: 1px #183a62;
+    border-top: 1px $secundaryColor;
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: #f0eff1;
@@ -262,7 +264,7 @@ footer {
     grid-area: footer;
 
     h3 {
-      color: #183a62;
+      color: $secundaryColor;
     }
     a {
       color: #4d2db7;
