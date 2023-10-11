@@ -1,18 +1,18 @@
+//Abstracts
+@use '../abstracts/variables' as variables;
+
 
 @mixin flex-row{
   display: flex;
   flex-direction: row;
 }
 
-header {
-  @include flex-row;
-  grid-area: header;
-  justify-content: space-between;
 
   nav {
+    background-color: $secundaryColor;
     height: 0.5fr;
     align-items: right;
-    width: 60%;
+ 
 
     ul {
       @include flex-row;
@@ -29,4 +29,4 @@ header {
       }
     }
   }
-}
+
