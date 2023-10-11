@@ -1,37 +1,28 @@
 //Abstracts
 @import "../abstracts/variables";
 
-
-
-@mixin flex-column{
+@mixin flex($direction) {
   display: flex;
-  flex-direction: column;
+  flex-direction: $direction;
 }
-
-@mixin flex-row{
-  display: flex;
-  flex-direction: row;
-}
-
 
 main {
-  @include flex-column;
+  @include flex(column);
   border-top: 1px $secundaryColor;
   grid-area: main;
   justify-content: space-evenly;
   height: 89vh;
 
   .FirstSection {
-    @include flex-row;
+    @include flex(row);
     border-top: 1px solid $secundaryColor;
     background-color: beige;
     padding-top: 10px;
     height: 100%;
     flex-wrap: wrap;
 
-
     .SectionTextLeft {
-      @include flex-column;
+      @include flex(column);
       margin-left: 5%;
       margin-right: 3%;
       width: 50%;
@@ -39,7 +30,7 @@ main {
     }
 
     .mainImageRight {
-      @include flex-column;
+      @include flex(column);
       margin-left: 6%;
       justify-content: space-around;
       object-fit: contain;
@@ -47,7 +38,6 @@ main {
   }
 
   .SecondSection {
-
     @extend .FirstSection;
     padding-top: 10px;
     background-color: $secundaryColor;
@@ -59,7 +49,7 @@ main {
     }
 
     .SectionTextRigh {
-      @include flex-column;
+      @include flex(column);
       margin-left: 3%;
       margin-right: 5%;
       width: 50%;
@@ -67,7 +57,7 @@ main {
     }
 
     .mainImageLeft {
-      @include flex-column;
+      @include flex(column);
       margin-right: 6%;
       justify-content: space-around;
       object-fit: contain;
