@@ -1,37 +1,46 @@
 //Abstracts
 @import "../abstracts/variables";
 
-main {
-  border-top: 1px $secundaryColor;
-  grid-area: main;
+
+
+@mixin flex-column{
   display: flex;
   flex-direction: column;
+}
+
+@mixin flex-row{
+  display: flex;
+  flex-direction: row;
+}
+
+
+main {
+  @include flex-column;
+  border-top: 1px $secundaryColor;
+  grid-area: main;
   justify-content: space-evenly;
   height: 89vh;
 
   .FirstSection {
+    @include flex-row;
     border-top: 1px solid $secundaryColor;
     background-color: beige;
     padding-top: 10px;
-    display: flex;
     height: 100%;
-    flex-direction: row;
     flex-wrap: wrap;
 
 
     .SectionTextLeft {
+      @include flex-column;
       margin-left: 5%;
       margin-right: 3%;
       width: 50%;
-      display: flex;
-      flex-direction: column;
       justify-content: center;
     }
 
     .mainImageRight {
+      @include flex-column;
       margin-left: 6%;
-      display: flex;
-      flex-direction: column;
       justify-content: space-around;
       object-fit: contain;
     }
@@ -50,18 +59,16 @@ main {
     }
 
     .SectionTextRigh {
+      @include flex-column;
       margin-left: 3%;
       margin-right: 5%;
       width: 50%;
-      display: flex;
-      flex-direction: column;
       justify-content: center;
     }
 
     .mainImageLeft {
+      @include flex-column;
       margin-right: 6%;
-      display: flex;
-      flex-direction: column;
       justify-content: space-around;
       object-fit: contain;
     }

@@ -1,7 +1,12 @@
-header {
-  grid-area: header;
+
+@mixin flex-row{
   display: flex;
   flex-direction: row;
+}
+
+header {
+  @include flex-row;
+  grid-area: header;
   justify-content: space-between;
 
   nav {
@@ -10,8 +15,7 @@ header {
     width: 60%;
 
     ul {
-      display: flex;
-      flex-direction: row;
+      @include flex-row;
       justify-content: space-around;
       align-items: center;
       height: 100%;

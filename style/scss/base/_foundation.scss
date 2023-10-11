@@ -1,6 +1,17 @@
 //Abstracts
 @import "../abstracts/variables";
 
+
+@mixin flex-column{
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-row{
+  display: flex;
+  flex-direction: row;
+}
+
 h1 {
   font-size: larger;
   color: $secundaryColor;
@@ -35,10 +46,9 @@ body {
       grid-template-rows: auto auto;
     }
     main {
+      @include flex-column;
       background-color: aquamarine;
       grid-area: main;
-      display: flex;
-      flex-direction: column;
       justify-content: space-between;
       height: auto;
     }
@@ -48,46 +58,39 @@ body {
       display: flex;
     }
     .SectionTextLeft {
+      @include flex-column;
       margin-left: 5%;
       margin-right: 3%;
       padding-bottom: 5%;
       width: auto;
-      display: flex;
-      flex-direction: column;
       justify-content: center;
     }
     .mainImageRight {
-      display: flex;
-      flex-direction: row;
-      
+      @include flex-row;
       margin-left: 3%;
       padding-bottom: 5%;
     }
     
     .SecondSection {
+      @include flex-column;
       padding-top: 10px;
       background-color: rgb(22, 53, 130);
-      display: flex;
       width: 100%;
-      flex-direction: column;
       align-items: flex-start;
       
       padding-bottom: 10px;
     }
     .SectionTextRigh {
+      @include flex-column;
       margin-left: 3%;
       margin-right: 5%;
       padding-bottom: 5%;
       width: auto;
-      display: flex;
-      flex-direction: column;
       justify-content: center;
     }
     
     .mainImageLeft {
-      display: flex;
-      flex-direction: row;
-      
+      @include flex-row;
       margin-left: 3%;
       padding-bottom: 5%;
     }

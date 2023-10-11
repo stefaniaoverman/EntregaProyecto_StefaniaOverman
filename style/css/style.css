@@ -35,10 +35,10 @@ body {
     grid-template-rows: auto auto;
   }
   main {
-    background-color: aquamarine;
-    grid-area: main;
     display: flex;
     flex-direction: column;
+    background-color: aquamarine;
+    grid-area: main;
     justify-content: space-between;
     height: auto;
   }
@@ -48,12 +48,12 @@ body {
     display: flex;
   }
   .SectionTextLeft {
+    display: flex;
+    flex-direction: column;
     margin-left: 5%;
     margin-right: 3%;
     padding-bottom: 5%;
     width: auto;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
   }
   .mainImageRight {
@@ -63,21 +63,21 @@ body {
     padding-bottom: 5%;
   }
   .SecondSection {
+    display: flex;
+    flex-direction: column;
     padding-top: 10px;
     background-color: rgb(22, 53, 130);
-    display: flex;
     width: 100%;
-    flex-direction: column;
     align-items: flex-start;
     padding-bottom: 10px;
   }
   .SectionTextRigh {
+    display: flex;
+    flex-direction: column;
     margin-left: 3%;
     margin-right: 5%;
     padding-bottom: 5%;
     width: auto;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
   }
   .mainImageLeft {
@@ -107,34 +107,34 @@ body {
   }
 }
 main {
-  border-top: 1px #183a62;
-  grid-area: main;
   display: flex;
   flex-direction: column;
+  border-top: 1px #183a62;
+  grid-area: main;
   justify-content: space-evenly;
   height: 89vh;
 }
 main .FirstSection, main .SecondSection {
+  display: flex;
+  flex-direction: row;
   border-top: 1px solid #183a62;
   background-color: beige;
   padding-top: 10px;
-  display: flex;
   height: 100%;
-  flex-direction: row;
   flex-wrap: wrap;
 }
 main .FirstSection .SectionTextLeft, main .SecondSection .SectionTextLeft {
+  display: flex;
+  flex-direction: column;
   margin-left: 5%;
   margin-right: 3%;
   width: 50%;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
 }
 main .FirstSection .mainImageRight, main .SecondSection .mainImageRight {
-  margin-left: 6%;
   display: flex;
   flex-direction: column;
+  margin-left: 6%;
   justify-content: space-around;
   object-fit: contain;
 }
@@ -148,17 +148,17 @@ main .SecondSection h1 {
   color: rgba(245, 245, 220, 0.751);
 }
 main .SecondSection .SectionTextRigh {
+  display: flex;
+  flex-direction: column;
   margin-left: 3%;
   margin-right: 5%;
   width: 50%;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
 }
 main .SecondSection .mainImageLeft {
-  margin-right: 6%;
   display: flex;
   flex-direction: column;
+  margin-right: 6%;
   justify-content: space-around;
   object-fit: contain;
 }
@@ -209,9 +209,9 @@ footer a {
 }
 
 header {
-  grid-area: header;
   display: flex;
   flex-direction: row;
+  grid-area: header;
   justify-content: space-between;
 }
 header nav {
