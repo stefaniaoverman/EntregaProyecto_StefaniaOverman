@@ -1,33 +1,30 @@
-
 //Abstracts
 @import "../abstracts/variables";
 
-
 footer {
-    border-top: 1px $secundaryColor;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: $primaryColor;
-    position: absolute;
-    bottom: 0%;
-    grid-area: footer;
-    width: 100%;
-  
-    .footerItem {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      width: 30%;
-      align-items: center;
-      float: left;
-    }
-  
-    h3 {
-      color: $secundaryColor;
-    }
-    a {
-      color: $accentColor;
-      text-decoration: none;
-    }
+  border-top: 1px $secundaryColor;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: $primaryColor;
+  position: absolute;
+  bottom: 0%;
+  grid-area: footer;
+  width: 100%;
+
+  .footerItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 30%;
+    align-items: center;
+    float: left;
   }
-  
+
+  h3 {
+    color: $secundaryColor;
+  }
+  a {
+    color: $accentColor;
+    text-decoration: none;
+  }
+}

@@ -1,15 +1,15 @@
 .menu {
-    background-color: darkgray;
-    ul {
-      list-style-type: none;
-      background-color: $secundaryColor;
-    }
-    
-    a {
-      color: $primaryColor;
-      
-      &:hover {
-        color: $secundaryColor;
-      }
+  background-color: darkgray;
+  ul {
+    list-style-type: none;
+    background-color: $secundaryColor;
+  }
+
+  a {
+    color: $primaryColor;
+
+    &:hover {
+      color: $secundaryColor;
     }
   }
+}
