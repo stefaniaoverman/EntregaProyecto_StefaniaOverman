@@ -23,21 +23,19 @@ body {
   font-family: "Raleway", "Lato", sans-serif;
   background-color: #f0eff1;
 }
+
 .grid {
   display: grid;
-  grid-template-areas:
-    "header header nav"
-    "main main main"
-    "footer footer footer";
+  grid-template-areas: "header header nav" "main main main" "footer footer footer";
   min-height: 100%;
   grid-template-columns: 1fr 0.5fr 1fr;
   grid-template-rows: 40px 75vh auto;
 }
+
 nav {
   grid-area: nav;
   height: 0.5fr;
 }
-
 nav ul {
   display: flex;
   flex-direction: row;
@@ -45,32 +43,16 @@ nav ul {
   align-items: center;
   height: 100%;
 }
-
-header {
-  grid-area: header;
-}
-
-.menu ul {
-  list-style-type: none;
-}
-header li {
-  display: inline;
-  list-style: none;
-}
-
-.menu ul {
-  background-color: #183a62;
-}
-
-.menu a {
-  color: #f0eff1;
-}
 nav ul :hover {
   background-color: white;
 }
 
-.menu a:hover {
-  color: #183a62;
+header {
+  grid-area: header;
+}
+header li {
+  display: inline;
+  list-style: none;
 }
 
 .logo {
@@ -80,6 +62,16 @@ nav ul :hover {
 
 .menu {
   background-color: darkgray;
+}
+.menu ul {
+  list-style-type: none;
+  background-color: #183a62;
+}
+.menu a {
+  color: #f0eff1;
+}
+.menu a:hover {
+  color: #183a62;
 }
 
 main {
@@ -109,6 +101,7 @@ main {
   flex-direction: column;
   justify-content: center;
 }
+
 .mainImageRight {
   margin-left: 6%;
   display: flex;
@@ -119,15 +112,13 @@ main {
 
 .SecondSection {
   padding-top: 10px;
-  background-color: #183a62e1;
+  background-color: rgba(24, 58, 98, 0.8823529412);
   height: 100%;
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
-
   padding-bottom: 10px;
 }
-
 .SecondSection h1 {
   color: rgba(245, 245, 220, 0.751);
 }
@@ -159,7 +150,6 @@ footer {
   grid-area: footer;
   width: 100%;
 }
-
 footer .footerItem {
   display: flex;
   flex-direction: row;
@@ -168,11 +158,9 @@ footer .footerItem {
   align-items: center;
   float: left;
 }
-
 footer h3 {
   color: #183a62;
 }
-
 footer a {
   color: #4d2db7;
   text-decoration: none;
@@ -184,11 +172,7 @@ footer a {
   }
   .grid {
     display: grid;
-    grid-template-areas:
-      "header  nav"
-      "main main "
-      "footer footer";
-
+    grid-template-areas: "header  nav" "main main " "footer footer";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
   }
@@ -217,11 +201,9 @@ footer a {
   .mainImageRight {
     display: flex;
     flex-direction: row;
-
     margin-left: 3%;
     padding-bottom: 5%;
   }
-
   .SecondSection {
     padding-top: 10px;
     background-color: rgb(22, 53, 130);
@@ -229,7 +211,6 @@ footer a {
     width: 100%;
     flex-direction: column;
     align-items: flex-start;
-
     padding-bottom: 10px;
   }
   .SectionTextRigh {
@@ -241,11 +222,9 @@ footer a {
     flex-direction: column;
     justify-content: center;
   }
-
   .mainImageLeft {
     display: flex;
     flex-direction: row;
-
     margin-left: 3%;
     padding-bottom: 5%;
   }
@@ -258,16 +237,16 @@ footer a {
     bottom: 0%;
     grid-area: footer;
   }
-  .footerItem {
-    flex-direction: column;
-  }
-
   footer h3 {
     color: #183a62;
   }
-
   footer a {
     color: #4d2db7;
     text-decoration: none;
   }
+  .footerItem {
+    flex-direction: column;
+  }
 }
+
+/*# sourceMappingURL=style.css.map */
