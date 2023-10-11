@@ -42,7 +42,7 @@ body {
     justify-content: space-between;
     height: auto;
   }
-  .FirstSection {
+  .FirstSection, main .SecondSection {
     background-color: beige;
     padding-top: 10px;
     display: flex;
@@ -114,7 +114,7 @@ main {
   justify-content: space-evenly;
   height: 89vh;
 }
-main .FirstSection {
+main .FirstSection, main .SecondSection {
   border-top: 1px solid #183a62;
   background-color: beige;
   padding-top: 10px;
@@ -123,7 +123,7 @@ main .FirstSection {
   flex-direction: row;
   flex-wrap: wrap;
 }
-main .FirstSection .SectionTextLeft {
+main .FirstSection .SectionTextLeft, main .SecondSection .SectionTextLeft {
   margin-left: 5%;
   margin-right: 3%;
   width: 50%;
@@ -131,7 +131,7 @@ main .FirstSection .SectionTextLeft {
   flex-direction: column;
   justify-content: center;
 }
-main .FirstSection .mainImageRight {
+main .FirstSection .mainImageRight, main .SecondSection .mainImageRight {
   margin-left: 6%;
   display: flex;
   flex-direction: column;
@@ -141,10 +141,7 @@ main .FirstSection .mainImageRight {
 main .SecondSection {
   padding-top: 10px;
   background-color: #183a62;
-  height: 100%;
-  display: flex;
   flex-direction: row-reverse;
-  flex-wrap: wrap;
   padding-bottom: 10px;
 }
 main .SecondSection h1 {
