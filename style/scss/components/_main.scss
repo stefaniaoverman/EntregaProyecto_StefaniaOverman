@@ -11,7 +11,6 @@ main {
   border-top: 1px $secundaryColor;
   grid-area: main;
   justify-content: space-evenly;
-  height: 89vh;
 
   .FirstSection {
     @include flex(row);
@@ -20,6 +19,8 @@ main {
     padding-top: 10px;
     height: 100%;
     flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 20px;
 
     .SectionTextLeft {
       @include flex(column);
@@ -42,7 +43,8 @@ main {
     padding-top: 10px;
     background-color: $secundaryColor;
     flex-direction: row-reverse;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
+    padding-top: 50px;
 
     h1 {
       color: rgba(245, 245, 220, 0.751);

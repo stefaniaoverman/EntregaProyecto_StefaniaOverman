@@ -7,7 +7,7 @@
 
 h1 {
   font-size: larger;
-  color: #183a62;
+  color: rgba(24, 58, 98, 0.8117647059);
 }
 
 h2 {
@@ -87,7 +87,7 @@ body {
     padding-bottom: 5%;
   }
   footer {
-    border-top: 1px #183a62;
+    border-top: 1px rgba(24, 58, 98, 0.8117647059);
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: #f0eff1;
@@ -96,7 +96,7 @@ body {
     grid-area: footer;
   }
   footer h3 {
-    color: #183a62;
+    color: rgba(24, 58, 98, 0.8117647059);
   }
   footer a {
     color: #4d2db7;
@@ -109,19 +109,20 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  border-top: 1px #183a62;
+  border-top: 1px rgba(24, 58, 98, 0.8117647059);
   grid-area: main;
   justify-content: space-evenly;
-  height: 89vh;
 }
 main .FirstSection, main .SecondSection {
   display: flex;
   flex-direction: row;
-  border-top: 1px solid #183a62;
+  border-top: 1px solid rgba(24, 58, 98, 0.8117647059);
   background-color: beige;
   padding-top: 10px;
   height: 100%;
   flex-wrap: wrap;
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
 main .FirstSection .SectionTextLeft, main .SecondSection .SectionTextLeft {
   display: flex;
@@ -140,9 +141,10 @@ main .FirstSection .mainImageRight, main .SecondSection .mainImageRight {
 }
 main .SecondSection {
   padding-top: 10px;
-  background-color: #183a62;
+  background-color: rgba(24, 58, 98, 0.8117647059);
   flex-direction: row-reverse;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
+  padding-top: 50px;
 }
 main .SecondSection h1 {
   color: rgba(245, 245, 220, 0.751);
@@ -173,17 +175,17 @@ main .SecondSection .mainImageLeft {
 }
 .menu ul {
   list-style-type: none;
-  background-color: #183a62;
+  background-color: rgba(24, 58, 98, 0.8117647059);
 }
 .menu a {
   color: #f0eff1;
 }
 .menu a:hover {
-  color: #183a62;
+  color: rgba(24, 58, 98, 0.8117647059);
 }
 
 footer {
-  border-top: 1px #183a62;
+  border-top: 1px rgba(24, 58, 98, 0.8117647059);
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: #f0eff1;
@@ -201,7 +203,7 @@ footer .footerItem {
   float: left;
 }
 footer h3 {
-  color: #183a62;
+  color: rgba(24, 58, 98, 0.8117647059);
 }
 footer a {
   color: #4d2db7;
@@ -209,7 +211,7 @@ footer a {
 }
 
 nav {
-  background-color: #183a62;
+  background-color: rgba(24, 58, 98, 0.8117647059);
   height: 0.5fr;
   align-items: right;
 }
