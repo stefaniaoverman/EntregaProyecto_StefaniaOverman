@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+h1 {
+  font-size: larger;
+  color: rgba(24, 58, 98, 0.8117647059);
+}
+
+h2 {
+  font-size: large;
+}
+
+h3 {
+  font-size: medium;
+  padding-bottom: 5px;
+}
+
+body {
+  font-family: "Raleway", "Lato", sans-serif;
+  background-color: #f0eff1;
+}
+
+@media screen and (max-width: 568px) {
+  body {
+    height: 100%;
+  }
+  .grid {
+    display: grid;
+    grid-template-areas: "header  nav" "main main " "footer footer";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+    grid-area: main;
+    justify-content: space-between;
+    height: auto;
+  }
+  .FirstSection, main .SecondSection {
+    background-color: beige;
+    padding-top: 10px;
+    display: flex;
+  }
+  .SectionTextLeft {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 3%;
+    padding-bottom: 5%;
+    width: auto;
+    justify-content: center;
+  }
+  .mainImageRight {
+    display: flex;
+    flex-direction: row;
+    margin-left: 3%;
+    padding-bottom: 5%;
+  }
+  .SecondSection {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    background-color: rgb(22, 53, 130);
+    width: 100%;
+    align-items: flex-start;
+    padding-bottom: 10px;
+  }
+  .SectionTextRigh {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+    margin-right: 5%;
+    padding-bottom: 5%;
+    width: auto;
+    justify-content: center;
+  }
+  .mainImageLeft {
+    display: flex;
+    flex-direction: row;
+    margin-left: 3%;
+    padding-bottom: 5%;
+  }
+  footer {
+    border-top: 1px rgba(24, 58, 98, 0.8117647059);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #f0eff1;
+    position: absolute;
+    bottom: 0%;
+    grid-area: footer;
+  }
+  footer h3 {
+    color: rgba(24, 58, 98, 0.8117647059);
+  }
+  footer a {
+    color: #4d2db7;
+    text-decoration: none;
+  }
+  .footerItem {
+    flex-direction: column;
+  }
+}
+main {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px rgba(24, 58, 98, 0.8117647059);
+  grid-area: main;
+  justify-content: space-evenly;
+}
+main .FirstSection, main .SecondSection {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid rgba(24, 58, 98, 0.8117647059);
+  background-color: beige;
+  padding-top: 10px;
+  height: 100%;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+main .FirstSection .SectionTextLeft, main .SecondSection .SectionTextLeft {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-right: 3%;
+  width: 50%;
+  justify-content: center;
+}
+main .FirstSection .mainImageRight, main .SecondSection .mainImageRight {
+  display: flex;
+  flex-direction: column;
+  margin-left: 6%;
+  justify-content: space-around;
+  object-fit: contain;
+}
+main .SecondSection {
+  padding-top: 10px;
+  background-color: rgba(24, 58, 98, 0.8117647059);
+  flex-direction: row-reverse;
+  padding-bottom: 30px;
+  padding-top: 50px;
+}
+main .SecondSection h1 {
+  color: rgba(245, 245, 220, 0.751);
+}
+main .SecondSection .SectionTextRigh {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3%;
+  margin-right: 5%;
+  width: 50%;
+  justify-content: center;
+}
+main .SecondSection .mainImageLeft {
+  display: flex;
+  flex-direction: column;
+  margin-right: 6%;
+  justify-content: space-around;
+  object-fit: contain;
+}
+
+.logo {
+  display: inline;
+  height: 100%;
+}
+
+.menu {
+  background-color: darkgray;
+}
+.menu ul {
+  list-style-type: none;
+  background-color: rgba(24, 58, 98, 0.8117647059);
+}
+.menu a {
+  color: #f0eff1;
+}
+.menu a:hover {
+  color: rgba(24, 58, 98, 0.8117647059);
+}
+
+footer {
+  border-top: 1px rgba(24, 58, 98, 0.8117647059);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #f0eff1;
+  position: absolute;
+  bottom: 0%;
+  grid-area: footer;
+  width: 100%;
+}
+footer .footerItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 30%;
+  align-items: center;
+  float: left;
+}
+footer h3 {
+  color: rgba(24, 58, 98, 0.8117647059);
+}
+footer a {
+  color: #4d2db7;
+  text-decoration: none;
+}
+
+nav {
+  background-color: rgba(24, 58, 98, 0.8117647059);
+  height: 0.5fr;
+  align-items: right;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+nav ul li {
+  display: inline;
+  list-style: none;
+}
+nav ul li:hover {
+  background-color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

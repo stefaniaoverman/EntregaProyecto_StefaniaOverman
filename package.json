@@ -1,0 +1,19 @@
+{
+  "name": "entregaproyecto_stefaniaoverman",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stefaniaoverman/EntregaProyecto_StefaniaOverman.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stefaniaoverman/EntregaProyecto_StefaniaOverman/issues"
+  },
+  "homepage": "https://github.com/stefaniaoverman/EntregaProyecto_StefaniaOverman#readme"
+}
