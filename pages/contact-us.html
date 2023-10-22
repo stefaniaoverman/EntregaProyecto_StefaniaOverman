@@ -1,111 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <!-- Bootstrap -->
-   <link
-   href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-   rel="stylesheet"
-   integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-   crossorigin="anonymous"
- />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Welcome to LOGO, your premier partner in the Salesforce realm. With a blend of expertise, dedication, and technical prowess, we're committed to unlocking Salesforce's full potential for businesses like yours." />
+  <meta name="keywords" content="salesforce, consulting, CRM, Business Automation, Salesforce Consulting " />
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="../style/css/style.css" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="../style/css/style.css" />
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Raleway&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Raleway&display=swap" rel="stylesheet" />
 
-    <title>Contact Us</title>
-  </head>
-  <body>
-  
-      <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html"><img src="../images/logo.png" alt="Company Logo" ></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse ml-auto" id="navbarNav">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="../pages/about-us.html">About Us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../pages/services.html">Services</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../pages/faq.html">Knowledge</a>
-                </li>
+  <title>Contact Us</title>
+</head>
 
-                <li class="nav-item">
-                  <a class="nav-link" href="../pages/contact-us.html">Contact Us</a>
-                </li>
-             
-              </ul>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img src="../images/logo.png" alt="Company Logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ml-auto" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../pages/about-us.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/faq.html">Knowledge</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/contact-us.html">Contact Us</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <main>
+    <div class="container-fluid">
+      <section class="FirstSection row">
+        <div class="SectionTextLeft col-6 col-md-4">
+          <h1>Subscribe to our newsletter</h1>
+
+          <p>
+            Stay in the loop! Subscribe to our newsletter for the latest updates, exclusive offers, and valuable
+            insights. Don't miss out, join our community today! </p>
+        </div>
+
+        <div class="mainImageRight col-6 col-md-4">
+          <img src="../images/img.png" alt="Main Image on Index" />
+        </div>
+      </section>
+
+      <section class="SecondSection row">
+        <div class="col">
+
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+            </div>
+            <div class="col">
+              <input type="email" class="form-control" placeholder="Email" aria-label="Email">
+            </div>
+
+            <div class="form-check col">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+              <label class="form-check-label" for="flexCheckIndeterminate">
+                Accept Terms and conditions
+              </label>
             </div>
           </div>
-        </nav>
-      </header>
+          </br>
 
-  
-      <main>
-        <div class="container-fluid">
-        <section class="FirstSection row">
-          <div class="SectionTextLeft col-6 col-md-4">
-            <h1>Subscribe to our newsletter</h1>
-        
-            <p>
-              Stay in the loop! Subscribe to our newsletter for the latest updates, exclusive offers, and valuable insights. Don't miss out, join our community today!          </p>
+          <div class="row">
+
+            <div class="col">
+              <button type="submit" class="btn btn-primary">Send</button>
+            </div>
           </div>
 
-          <div class="mainImageRight col-6 col-md-4">
-            <img src="../images/img.png" alt="Main Image on Index" />
-          </div>
-        </section>
-
-        <section class="SecondSection row">
-          <div class="col">
-          
-            <div class="row">
-              <div class="col">
-                <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-              </div>
-              <div class="col">
-                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-              </div>
-              <div class="col">
-                <input type="email" class="form-control" placeholder="Email" aria-label="Email">
-              </div>
-              <div class="col">
-                <button type="submit" class="btn btn-primary">Send</button>
-              </div>
-            </div>          
           </form>
-          </div>
-        </section>
-      </main>
-    </div>
-    <footer class="container-fluid" >
-      <div class="row">
+        </div>
+      </section>
+  </main>
+  </div>
+  <footer class="container-fluid">
+    <div class="row">
       <!--Flex Container-->
       <div class="firstFooterSection footerItem col-6 col-md-4">
         <div>
           <h3>Implementations</h3>
           <ul>
             <li><a href="https://unofficialsf.com/">Unofficial SF</a></li>
-       
+
           </ul>
         </div>
       </div>
@@ -114,7 +128,7 @@
           <h3>Learn</h3>
           <ul>
             <li><a href="https://www.salesforceben.com/">Salesforce Ben</a></li>
-         
+
           </ul>
         </div>
       </div>
@@ -123,18 +137,17 @@
           <h3>Official Site</h3>
           <ul>
             <li><a href="https://www.salesforce.com/">Salesforce.com</a></li>
-           
+
           </ul>
         </div>
       </div>
     </div>
-    </footer>
+  </footer>
 
-   
-    <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"
-  ></script>
-  </body>
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
