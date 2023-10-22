@@ -26,11 +26,11 @@ body {
 
 @media screen and (max-width: 568px) {
   body {
-    height: 100%;
+    min-height: 100%;
   }
   .grid {
     display: grid;
-    grid-template-areas: "header  nav" "main main " "footer footer";
+    grid-template-areas: "header  nav" "main main " "footer";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
   }
@@ -61,13 +61,13 @@ body {
     flex-direction: row;
     margin-left: 3%;
     padding-bottom: 5%;
+    max-width: 35%;
   }
   .SecondSection {
     display: flex;
     flex-direction: column;
     padding-top: 10px;
     background-color: rgb(22, 53, 130);
-    width: 100%;
     align-items: flex-start;
     padding-bottom: 10px;
   }
@@ -88,12 +88,14 @@ body {
   }
   footer {
     border-top: 1px rgba(24, 58, 98, 0.8117647059);
-    padding-top: 10px;
-    padding-bottom: 10px;
     background-color: #f0eff1;
-    position: absolute;
-    bottom: 0%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
     grid-area: footer;
+    width: 100%;
+    display: flex;
+    overflow: auto;
   }
   footer h3 {
     color: rgba(24, 58, 98, 0.8117647059);
@@ -104,6 +106,7 @@ body {
   }
   .footerItem {
     flex-direction: column;
+    width: 20%;
   }
 }
 main {
@@ -111,6 +114,7 @@ main {
   flex-direction: column;
   border-top: 1px rgba(24, 58, 98, 0.8117647059);
   grid-area: main;
+  width: 100%;
   justify-content: space-evenly;
 }
 main .FirstSection, main .SecondSection {
@@ -118,11 +122,15 @@ main .FirstSection, main .SecondSection {
   flex-direction: row;
   border-top: 1px solid rgba(24, 58, 98, 0.8117647059);
   background-color: beige;
-  padding-top: 10px;
-  height: 100%;
+  width: 100%;
   flex-wrap: wrap;
   padding-top: 50px;
   padding-bottom: 20px;
+}
+main .FirstSection::after, main .SecondSection::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 main .FirstSection .SectionTextLeft, main .SecondSection .SectionTextLeft {
   display: flex;
@@ -141,10 +149,17 @@ main .FirstSection .mainImageRight, main .SecondSection .mainImageRight {
 }
 main .SecondSection {
   padding-top: 10px;
+  width: 100%;
   background-color: rgba(24, 58, 98, 0.8117647059);
   flex-direction: row-reverse;
   padding-bottom: 30px;
   padding-top: 50px;
+  overflow: auto;
+}
+main .SecondSection::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 main .SecondSection h1 {
   color: rgba(245, 245, 220, 0.751);
@@ -201,6 +216,7 @@ footer .footerItem {
   width: 30%;
   align-items: center;
   float: left;
+  padding: 3px;
 }
 footer h3 {
   color: rgba(24, 58, 98, 0.8117647059);

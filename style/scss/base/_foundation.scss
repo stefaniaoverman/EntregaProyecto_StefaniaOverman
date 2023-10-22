@@ -23,18 +23,19 @@ h3 {
 body {
   font-family: "Raleway", "Lato", sans-serif;
   background-color: $primaryColor;
+  
 }
 
 @media screen and (max-width: 568px) {
   body {
-    height: 100%;
+    min-height: 100%;
   }
   .grid {
     display: grid;
     grid-template-areas:
       "header  nav"
       "main main "
-      "footer footer";
+      "footer";
 
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
@@ -63,13 +64,14 @@ body {
     @include flex(row);
     margin-left: 3%;
     padding-bottom: 5%;
+    max-width: 35%
   }
 
   .SecondSection {
     @include flex(column);
     padding-top: 10px;
     background-color: rgb(22, 53, 130);
-    width: 100%;
+  
     align-items: flex-start;
 
     padding-bottom: 10px;
@@ -90,12 +92,14 @@ body {
   }
   footer {
     border-top: 1px $secundaryColor;
-    padding-top: 10px;
-    padding-bottom: 10px;
     background-color: $primaryColor;
-    position: absolute;
-    bottom: 0%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
     grid-area: footer;
+    width: 100%;
+    display: flex;
+    overflow: auto;
 
     h3 {
       color: $secundaryColor;
@@ -107,5 +111,6 @@ body {
   }
   .footerItem {
     flex-direction: column;
+    width: 20%;
   }
 }
